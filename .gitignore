@@ -1,0 +1,32 @@
+# Build folders
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+
+# Visual Studio cache
+.vs/
+
+# Others
+*.pdb
+*.cache
+*.log
+
+# Rider
+.idea/
+
+# NuGet
+packages/
+*.nupkg
+
+# dotnet CLI
+project.lock.json
+project.fragment.lock.json
+
+# Auto-generated files
+Generated\
+
+# Publish output
+publish/
