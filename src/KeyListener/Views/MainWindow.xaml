@@ -1,18 +1,17 @@
-<Window x:Class="KeyListener.Views.MainWindow"
+<Window x:Class="KeyListener.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Key Listener" Height="450" Width="800">
     <StackPanel Margin="20">
-        <Button Content="Start" Command="{Binding StartCommand}" />
-        <Button Content="Stop" Command="{Binding StopCommand}" />
-        <Button Content="Pokaz statystyki" Command="{Binding ShowStatsCommand}" />
+        <Button Content="Start" Command="{Binding StartCommand}" Margin="5"/>
+        <Button Content="Stop" Command="{Binding StopCommand}" Margin="5"/>
+        <Button Content="Pokaż statystyki" Command="{Binding ShowStatsCommand}" Margin="5"/>
 
-        <ListView ItemsSource="{Binding Stats}">
+        <ListView ItemsSource="{Binding Stats}" Margin="5">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Klawisz" DisplayMemberBinding="{Binding Key}" />
                     <GridViewColumn Header="Liczba" DisplayMemberBinding="{Binding Count}" />
-                    <GridViewColumn Header="%" DisplayMemberBinding="{Binding Percentage}" />
                 </GridView>
             </ListView.View>
         </ListView>
