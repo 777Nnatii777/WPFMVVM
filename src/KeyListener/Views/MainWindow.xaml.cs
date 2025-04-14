@@ -1,8 +1,8 @@
 using System.Windows;
-using KeyListener.Services;
 using KeyListener.ViewModels;
+using KeyListener.Services;
 
-namespace KeyListener
+namespace KeyListener.Views
 {
     public partial class MainWindow : Window
     {
